@@ -1,4 +1,4 @@
-from src.tools.tools import websearch, scrape_url
+from src.pipeline.pipeline import run_research_pipeline
 
-output = scrape_url("https://www.ndtv.com/topic/visakhapatnam")
-print(output)
+topic = "What revolution AI can make in this decade"
+run_research_pipeline(topic)
